@@ -1,0 +1,270 @@
+# ==============================================
+# .NET Core / ASP.NET Core
+# ==============================================
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.csproj.user
+*.vsidx
+*.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+**/packages/*
+!**/packages/build/
+*.nuget.props
+*.nuget.targets
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Build results
+[Dd]ebugPublic/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio cache/options
+.vs/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ==============================================
+# Test Results & Coverage
+# ==============================================
+TestResults/
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+coverage/
+coverage.json
+coverage.opencover.xml
+TestResult.xml
+*.dcproj.user
+
+# ==============================================
+# Code Runner (VS Code Extension)
+# ==============================================
+tempCodeRunnerFile.cs
+tempCodeRunnerFile.*
+*.exe
+
+# ==============================================
+# Node.js / React / Frontend
+# ==============================================
+node_modules/
+dist/
+.vite/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.next/
+out/
+.cache/
+.parcel-cache/
+
+# ==============================================
+# Flutter / Dart
+# ==============================================
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+.pub-cache/
+.pub/
+ios/Pods/
+ios/.symlinks/
+.fvm/
+*.g.dart
+*.freezed.dart
+
+# ==============================================
+# IDEs & Editors
+# ==============================================
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ==============================================
+# Environment & Configuration
+# ==============================================
+.env
+.env.local
+.env.development
+.env.production
+*.env
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# ==============================================
+# Docker
+# ==============================================
+docker-compose.override.yml
+Dockerfile.local
+.dockerignore.local
+
+# ==============================================
+# Databases
+# ==============================================
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.mdf
+*.ldf
+
+# ==============================================
+# Logs
+# ==============================================
+logs/
+*.log
+log.txt
+
+# ==============================================
+# Operating System
+# ==============================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# ==============================================
+# Temporary Files
+# ==============================================
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ==============================================
+# Backup Files
+# ==============================================
+*.orig
+*.backup
+_backup/
+_archive/
+
+# ==============================================
+# Additional .NET Specific
+# ==============================================
+*.rsuser
+*.sln.docstates
+*.userprefs
+mono_crash.*
+[Ee]xpress/
+
+# StyleCop
+StyleCopReport.xml
+
+# Files built by Visual Studio
+*_i.c
+*_p.c
+*_h.h
+*.ilk
+*.meta
+*.obj
+*.iobj
+*.pch
+*.pdb
+*.ipdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp_proj
+*_wpftmp.csproj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
+
+# Publish profiles
+*.pubxml
+*.pubxml.user
+*.publishproj
+
+# ==============================================
+# K8s / Infrastructure
+# ==============================================
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraformrc
+terraform.rc
+
+# Helm
+charts/**/charts/
+charts/**/*.tgz
