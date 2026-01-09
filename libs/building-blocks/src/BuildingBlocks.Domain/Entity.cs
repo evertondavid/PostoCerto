@@ -18,6 +18,13 @@ public abstract class Entity<TId> where TId : notnull
       Id = default!; // Default value for TId
     }
 
+    public Entity<TId> MarkAsModified()
+    {
+        UpdatedAt = DateTime.UtcNow;
+        return this;
+    }
+
+
      public override bool Equals(object? obj)
     {
         if (obj is not Entity<TId> other)

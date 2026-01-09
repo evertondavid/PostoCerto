@@ -223,6 +223,14 @@ Asynchronous communication for decoupled services:
 | **PostgreSQL** | 16.6 (LTS) | Identity, Stations | Relational data with ACID guarantees |
 | **MongoDB** | 7.0.15 (LTS) | Prices, Recommendations | Document store for flexible schemas |
 
+### Security
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| **BCrypt.Net-Next** | 4.0.3 | Password hashing with automatic salt (MVP) |
+
+> **Future Enhancement:** Migrate to Argon2id for production (winner of Password Hashing Competition, more resistant to GPU/ASIC attacks)
+
 ### Testing
 
 | Tool | Version | Purpose |
@@ -573,7 +581,12 @@ Scope: web-bff, mobile-bff, identity, stations, prices, recommendations, buildin
 - [ ] Implement ValueObject base class
 - [ ] Implement Result<T> pattern
 - [ ] Implement DomainEvent base class
-- [ ] Identity Service domain (User, Email, Password)
+- [ ] Identity Service domain
+  - [ ] Email ValueObject (MailAddress validation)
+  - [ ] PasswordHash ValueObject (BCrypt)
+  - [ ] Address ValueObject (Street, City, State, Type)
+  - [ ] User Entity with 10 essential tests
+  - [ ] **Future**: Advanced email validation (DNS MX, disposable email blacklist, corporate domain whitelist)
 - [ ] Stations Service domain (Station, Cnpj, Coordinates)
 - [ ] Prices Service domain (PriceSurvey, FuelPrice)
 - [ ] Recommendations Service domain
